@@ -7,7 +7,7 @@ import math
 
 def geome_mean(*args):
     if args:
-        nums = [int(arg) for arg in args]
+        nums = [float(arg) for arg in args]
         return math.prod(nums)**(1/len(nums))
     else:
         return None

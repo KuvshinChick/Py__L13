@@ -5,7 +5,7 @@
 def harmon_mean(*args):
     if args:
         # Сразу получаю перевернутые дроби 1/n
-        nums = [1/int(arg) for arg in args]
+        nums = [1/float(arg) for arg in args]
         return len(nums)/sum(nums)
     else:
         return None
