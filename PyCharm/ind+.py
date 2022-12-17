@@ -9,7 +9,7 @@ def sum_of_modules(*args):
             if abs(i) < min_num:
                 min_num = abs(i)
                 i_min = args.index(i)
-        return sum(args[i_min + 1::])
+        return sum(map(abs, args[i_min + 1::]))
     else:
         return None
 
